@@ -1,6 +1,7 @@
 import { SiGithub, SiLinkedin } from "@icons-pack/react-simple-icons";
 import { CopyBlock, tomorrowNight } from "react-code-blocks";
 import { Button } from "./components/ui/button";
+import { Separator } from "./components/ui/separator";
 
 const CODE_TEXT = `fn get_info() {
   Developer::new()
@@ -25,14 +26,17 @@ const CODE_TEXT = `fn get_info() {
 
 function App() {
   return (
-    <div className="flex flex-col justify-center items-center p-3 gap-4 sm:w-1/2 sm:mx-auto">
-      <span className="text-center">
+    <div className="flex flex-col justify-center items-center p-3 gap-2 sm:w-1/2 sm:mx-auto">
+      <span className="text-center flex flex-col gap-2">
         <h1 className="text-primary text-4xl font-medium">isaac.rs</h1>
 
         <h2 className="text-muted-foreground text-xl">
           Mountain Biking | Linux | Programming
         </h2>
-        <p className="sm:text-lg text-sm text-muted-foreground mt-2 ">
+
+        <Separator />
+
+        <p className="sm:text-lg text-sm text-muted-foreground">
           Hi, I'm Isaac! As the CTO at Elektrik App Inc., I specialize in
           building scalable, high-performance applications. Whether it's
           optimizing back-end systems or crafting user experiences, I'm always
