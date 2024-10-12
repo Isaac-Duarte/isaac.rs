@@ -3,7 +3,7 @@ import { CopyBlock, tomorrowNight } from "react-code-blocks";
 import { Button } from "./components/ui/button";
 import { Separator } from "./components/ui/separator";
 
-const CODE_TEXT = `fn get_info() {
+const CODE_TEXT = `fn get_info() -> Developer {
   Developer::new()
     .name("Isaac")
     .employed_at(Company::from("Elektrik App Inc."))
