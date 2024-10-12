@@ -25,13 +25,14 @@ const CODE_TEXT = `fn get_info() {
 
 function App() {
   return (
-    <div className="w-full flex flex-col justify-center items-center p-3 gap-4">
-      <span className="text-center sm:w-1/2">
+    <div className="flex flex-col justify-center items-center p-3 gap-4 sm:w-1/2 sm:mx-auto">
+      <span className="text-center">
         <h1 className="text-primary text-4xl font-medium">isaac.rs</h1>
-        <h2 className="text-muted-foreground text-sm">
+
+        <h2 className="text-muted-foreground text-xl">
           Mountain Biking | Linux | Programming
         </h2>
-        <p className="text-xs text-muted-foreground mt-2 ">
+        <p className="sm:text-lg text-sm text-muted-foreground mt-2 ">
           Hi, I'm Isaac! As the CTO at Elektrik App Inc., I specialize in
           building scalable, high-performance applications. Whether it's
           optimizing back-end systems or crafting user experiences, I'm always
@@ -39,7 +40,16 @@ function App() {
         </p>
       </span>
 
-      <div className="text-primary flex flex-row justify-between gap-2">
+      <div className="w-full sm:text-sm text-xs font-mono">
+        <CopyBlock
+          text={CODE_TEXT}
+          language="rust"
+          theme={tomorrowNight}
+          codeBlock
+        />
+      </div>
+
+      <div className="text-primary flex flex-row gap-2 w-full">
         <Button size="icon">
           <a href="https://github.com/Isaac-Duarte" target="_blank">
             <SiGithub />
@@ -47,19 +57,10 @@ function App() {
         </Button>
 
         <Button size="icon">
-        <a href="https://www.linkedin.com/in/duarte-isaac/" target="_blank">
+          <a href="https://www.linkedin.com/in/duarte-isaac/" target="_blank">
             <SiLinkedin />
           </a>
         </Button>
-      </div>
-      
-      <div className="sm:w-1/2 text-xs font-mono">
-        <CopyBlock
-          text={CODE_TEXT}
-          language="rust"
-          theme={tomorrowNight}
-          codeBlock
-        />
       </div>
     </div>
   );
