@@ -26,7 +26,7 @@ const CODE_TEXT = `fn get_info() -> Developer {
 
 function App() {
   return (
-    <div className="flex flex-col justify-center items-center p-3 gap-2 sm:w-1/2 sm:mx-auto">
+    <div className="flex flex-col justify-center items-center p-3 gap-2 mx-auto sm:container xl:w-1/2 xl:mx-auto">
       <span className="text-center flex flex-col gap-2">
         <h1 className="text-primary text-4xl font-medium">isaac.rs</h1>
 
