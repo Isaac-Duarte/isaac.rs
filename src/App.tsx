@@ -37,10 +37,12 @@ function App() {
         <Separator />
 
         <p className="sm:text-lg text-sm text-muted-foreground">
-          Hi, I'm Isaac! As the CTO at Elektrik App Inc., I specialize in
-          building scalable, high-performance applications. Whether it's
-          optimizing back-end systems or crafting user experiences, I'm always
-          up for a challenge.
+          Hi, I’m Isaac! As the CTO at Elektrik App Inc., I lead the development
+          of scalable, high-performance solutions. From optimizing complex
+          back-end architectures to refining user interfaces, I thrive on
+          overcoming technical challenges. I’m also highly experienced in
+          medium-voltage systems, ensuring our products meet rigorous industry
+          standards.
         </p>
       </span>
 
